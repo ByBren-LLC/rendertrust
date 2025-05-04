@@ -62,14 +62,6 @@ RenderTrust's architecture is illustrated through several key diagrams:
 
 **Data Flow**: This diagram shows how data flows through the RenderTrust system, from input to processing to output.
 
-<img src="diagrams/RenderTrust_work_state.png" alt="RenderTrust Work State" width="600"/>
-
-**Work State**: This diagram explains how workloads are managed and tracked through different states in the system.
-
-<img src="diagrams/RenderTrust_change_state.png" alt="RenderTrust Change State" width="600"/>
-
-**Change State**: This diagram illustrates how the system handles state transitions and ensures consistency across distributed components.
-
 ## Documentation
 
 Comprehensive documentation is available in the `docs/` directory, including:
