@@ -1,0 +1,1 @@
+CREATE OR REPLACE VIEW fleet_overview AS SELECT n.id,n.vram,n.temp,n.uptime,COALESCE(SUM(l.delta_usd),0) AS earnings FROM nodes n LEFT JOIN ledger_entries l ON l.account_id = CONCAT('node:',n.id) GROUP BY n.id;

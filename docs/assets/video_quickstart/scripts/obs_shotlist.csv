@@ -1,0 +1,9 @@
+start,end,source
+0,5,logo.mp4
+5,15,terminal_capture.mp4
+15,45,desktop_record.webm
+45,75,fleet_dashboard.webm
+75,135,local_frames.webm
+135,165,agentspace.mp4
+165,200,billing.mp4
+200,180,logo_outro.mp4
