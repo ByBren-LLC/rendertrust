@@ -50,6 +50,26 @@ git clone https://github.com/cheddarfox/rendertrust.git
 curl -sL https://raw.githubusercontent.com/cheddarfox/rendertrust/dev/tools/bootstrap.sh | bash
 ```
 
+## Architecture Diagrams
+
+RenderTrust's architecture is illustrated through several key diagrams:
+
+<img src="diagrams/diagram 1_RenderTrust.png" alt="RenderTrust Architecture Overview" width="600"/>
+
+**Architecture Overview**: This diagram illustrates the high-level components of the RenderTrust platform and how they interact to provide distributed Edge-AI capabilities.
+
+<img src="diagrams/diagram 2_RenderTrust.png" alt="RenderTrust Data Flow" width="600"/>
+
+**Data Flow**: This diagram shows how data flows through the RenderTrust system, from input to processing to output.
+
+<img src="diagrams/RenderTrust_work_state.png" alt="RenderTrust Work State" width="600"/>
+
+**Work State**: This diagram explains how workloads are managed and tracked through different states in the system.
+
+<img src="diagrams/RenderTrust_change_state.png" alt="RenderTrust Change State" width="600"/>
+
+**Change State**: This diagram illustrates how the system handles state transitions and ensures consistency across distributed components.
+
 ## Documentation
 
 Comprehensive documentation is available in the `docs/` directory, including:
