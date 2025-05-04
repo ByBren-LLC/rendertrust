@@ -1,0 +1,87 @@
+name: RenderTrust Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+        
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Extract version
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+          
+      - name: Build and push release images
+        run: |
+          # Core services
+          docker buildx build --push \
+            --tag ghcr.io/cheddarfox/rendertrust/scheduler:${{ steps.version.outputs.VERSION }} \
+            --tag ghcr.io/cheddarfox/rendertrust/scheduler:latest \
+            ./core/scheduler
+            
+          docker buildx build --push \
+            --tag ghcr.io/cheddarfox/rendertrust/ledger:${{ steps.version.outputs.VERSION }} \
+            --tag ghcr.io/cheddarfox/rendertrust/ledger:latest \
+            ./core/ledger
+            
+          docker buildx build --push \
+            --tag ghcr.io/cheddarfox/rendertrust/billing:${{ steps.version.outputs.VERSION }} \
+            --tag ghcr.io/cheddarfox/rendertrust/billing:latest \
+            ./core/billing
+            
+          docker buildx build --push \
+            --tag ghcr.io/cheddarfox/rendertrust/gateway:${{ steps.version.outputs.VERSION }} \
+            --tag ghcr.io/cheddarfox/rendertrust/gateway:latest \
+            ./core/gateway
+            
+          # EdgeKit components
+          docker buildx build --push \
+            --tag ghcr.io/cheddarfox/rendertrust/relay:${{ steps.version.outputs.VERSION }} \
+            --tag ghcr.io/cheddarfox/rendertrust/relay:latest \
+            ./edgekit/relay
+            
+          docker buildx build --push \
+            --tag ghcr.io/cheddarfox/rendertrust/poller:${{ steps.version.outputs.VERSION }} \
+            --tag ghcr.io/cheddarfox/rendertrust/poller:latest \
+            ./edgekit/poller
+      
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: RenderTrust ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          body: |
+            RenderTrust ${{ github.ref_name }} Release
+            
+            ## What's Changed
+            
+            * See the [CHANGELOG.md](https://github.com/cheddarfox/rendertrust/blob/main/CHANGELOG.md) for details
+            
+            ## Docker Images
+            
+            ```
+            ghcr.io/cheddarfox/rendertrust/scheduler:${{ steps.version.outputs.VERSION }}
+            ghcr.io/cheddarfox/rendertrust/ledger:${{ steps.version.outputs.VERSION }}
+            ghcr.io/cheddarfox/rendertrust/billing:${{ steps.version.outputs.VERSION }}
+            ghcr.io/cheddarfox/rendertrust/gateway:${{ steps.version.outputs.VERSION }}
+            ghcr.io/cheddarfox/rendertrust/relay:${{ steps.version.outputs.VERSION }}
+            ghcr.io/cheddarfox/rendertrust/poller:${{ steps.version.outputs.VERSION }}
+            ```
