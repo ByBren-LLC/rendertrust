@@ -1,6 +1,6 @@
 # RenderTrust
 
-RenderTrust is an Edge-AI Fabric for distributed compute.
+The open‑source edge platform that lets you harness any GPU anywhere—without ever surrendering your raw files. Every prompt, frame, and model call stays encrypted end‑to‑end, so your creative IP is protected from first keystroke to final render.
 
 Repository structure:
 
