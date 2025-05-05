@@ -2,9 +2,25 @@
 
 <img src="diagrams/RenderTrust_prime_logo.png" alt="RenderTrust Logo" width="300"/>
 
-## Edge-AI Fabric for Distributed Compute
+**Harness any GPU—without ever surrendering your raw files.** RenderTrust is the open‑source edge AI platform that balances **privacy**, **security**, and **elasticity** for creators of all sizes.
 
-RenderTrust is a comprehensive platform for orchestrating distributed AI workloads across edge and cloud infrastructure. It provides a secure, scalable, and efficient way to deploy and manage AI models in production environments.
+## Why RenderTrust Matters
+
+In today's landscape, creative teams—from solo YouTubers to global studios—face three key barriers:
+
+1. **Data Sovereignty**: Studios cannot risk leaking scripts, storyboards, or unreleased footage to black‑box SaaS platforms.
+2. **Cost Efficiency**: Indie creators are priced out of large cloud render farms and stuck with local CPUs.
+3. **Ecosystem Fragmentation**: Every model and workflow has its own API, making integration a full‑time job.
+
+RenderTrust tears down these walls by:
+
+- **End‑to‑end encryption**: Your prompts, frames, and metadata remain encrypted in transit and at rest.
+- **Edge‑first mesh**: Community GPUs, on‑prem servers, and cloud overflow work interchangeably under a unified protocol (A2A).
+- **Open standard**: JSON‑RPC A2A + optional MCP integration means any vendor or developer can plug in without re‑inventing the wheel.
+
+Whether you're running your own nodes or tapping into public GPUs, RenderTrust ensures your IP stays under your keys—while giving you the scale and flexibility of a global compute network.
+
+---
 
 ## Key Features
 
@@ -70,6 +86,27 @@ Comprehensive documentation is available in the `docs/` directory, including:
 - API references
 - Quickstart tutorials
 
-## License
+## Licensing
 
-RenderTrust is proprietary software. All rights reserved.
+RenderTrust is a hybrid open‑source and proprietary platform with a dual-licensing model:
+
+### Open‑Source Components (MIT/Apache-2)
+
+These modules are fully open‑source. Contributors and operators can fork, modify, and redistribute under permissive terms:
+
+* **A2A Protocol & SDKs** (`sdk/`): MIT License
+* **Core Scheduler, Gateway, Relay** (`core/`, `edgekit/relay/`): Apache License 2.0
+* **Load‑Test & CI Tools** (`loadtest/`, `ci/`): MIT License
+* **Documentation & Diagrams** (`docs/`, `diagrams/`): CC0 or MIT
+* **MCP Client Adapters** (`sdk/mcp/`): Apache 2.0
+
+### Proprietary / Enterprise Components (Commercial License)
+
+These services remain RenderTrust proprietary, licensed to enterprises under a commercial agreement:
+
+* **Paymaster & Bundler Service** (`rollup_anchor/paymaster/`)
+* **Premium Modules & Voice/LLM Models** (`edgekit/workers/premium_voice/`, `edgekit/workers/studio_llm/`)
+* **Hosted Monitoring & Analytics** (Cloud services, not in repo)
+* **Enterprise UIs & Branding Extensions** (`core/gateway/web/enterprise/`)
+
+See [LICENSE-MIT](./LICENSE-MIT), [LICENSE-APACHE-2.0](./LICENSE-APACHE-2.0), and [LICENSE-ENTERPRISE](./LICENSE-ENTERPRISE) for full license texts.

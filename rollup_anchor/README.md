@@ -1,6 +1,10 @@
 # RenderTrust Rollup Anchor
 
+![License: Mixed](https://img.shields.io/badge/License-Mixed-yellow.svg)
+
 This module provides blockchain anchoring for the RenderTrust ledger, ensuring immutable verification of transaction records.
+
+**License Note**: The core components of this module are licensed under Apache 2.0, while the paymaster service is under the Enterprise License. See [../../LICENSE-APACHE-2.0](../../LICENSE-APACHE-2.0) and [../../LICENSE-ENTERPRISE](../../LICENSE-ENTERPRISE) for details.
 
 ## Overview
 

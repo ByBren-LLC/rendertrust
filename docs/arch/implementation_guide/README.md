@@ -1,5 +1,9 @@
 # RenderTrust Implementation Guide
 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+This directory is licensed under the MIT License. See `../../LICENSE-MIT`.
+
 This guide provides comprehensive instructions for implementing and deploying the RenderTrust platform.
 
 ## Table of Contents
