@@ -112,3 +112,12 @@ These services remain RenderTrust proprietary, licensed to enterprises under a c
 * **Enterprise UIs & Branding Extensions** (`core/gateway/web/enterprise/`)
 
 See [LICENSE-MIT](./LICENSE-MIT), [LICENSE-APACHE-2.0](./LICENSE-APACHE-2.0), and [LICENSE-ENTERPRISE](./LICENSE-ENTERPRISE) for full license texts.
+
+## Contact & Support
+
+For questions, support, or partnership inquiries:
+
+- **Email**: [scott@wordstofilmby.com](mailto:scott@wordstofilmby.com)
+- **Website**: [www.WordsToFilmBy.com](https://www.wordstofilmby.com)
+
+RenderTrust is sponsored by [Words To Film By](https://www.wordstofilmby.com), empowering creators with secure, distributed AI infrastructure.

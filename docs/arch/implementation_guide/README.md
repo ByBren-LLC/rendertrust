@@ -171,4 +171,13 @@ DR drills are conducted every 6 months.
 
 ---
 
+## Contact & Support
+
+For implementation assistance or questions:
+
+- **Email**: [scott@wordstofilmby.com](mailto:scott@wordstofilmby.com)
+- **Website**: [www.WordsToFilmBy.com](https://www.wordstofilmby.com)
+
+RenderTrust is sponsored by [Words To Film By](https://www.wordstofilmby.com), empowering creators with secure, distributed AI infrastructure.
+
 For more detailed information, refer to the [RenderTrust Architect Manual](../RenderTrust_Architect_Manual.md).

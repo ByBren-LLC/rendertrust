@@ -46,7 +46,7 @@
 2. Scheduler dispatch → Relay via Tunnel (**80 ms**)
 3. Edge container runs job (**variable**)
 4. Artefacts encrypted → back through Tunnel → Creator (**80 ms**)
-5. Ledger & metrics fire async (**≤5 ms**)  
+5. Ledger & metrics fire async (**≤5 ms**)
    *Total control-plane round trip ≤215 ms; remainder is compute‐bound.*
 
 ---
@@ -177,6 +177,8 @@ DR drill every 6 months.
 
 - **Arch-Decisions** – `#arch-sync`, Oliver Insight IV
 - **Security** – `security@rendertrust.com`
+- **Support** – [scott@wordstofilmby.com](mailto:scott@wordstofilmby.com)
 - **Ops Runbook** – [https://runbooks.rendertrust.com](https://runbooks.rendertrust.com)
+- **Sponsor** – [Words To Film By](https://www.wordstofilmby.com)
 
 *—— End of Architect Manual ——*
