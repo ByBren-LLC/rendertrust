@@ -2,6 +2,8 @@
 
 <img src="diagrams/RenderTrust_prime_logo.png" alt="RenderTrust Logo" width="300"/>
 
+The open‑source edge platform that lets you harness any GPU anywhere—without ever surrendering your raw files. Every prompt, frame, and model call stays encrypted end‑to‑end, so your creative IP is protected from first keystroke to final render.
+
 **Harness any GPU—without ever surrendering your raw files.** RenderTrust is the open‑source edge AI platform that balances **privacy**, **security**, and **elasticity** for creators of all sizes.
 
 ## Why RenderTrust Matters
