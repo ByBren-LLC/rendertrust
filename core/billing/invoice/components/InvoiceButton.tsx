@@ -1,0 +1,1 @@
+export const InvoiceButton=()=> <a href='/api/latest-invoice' className='btn-secondary'>Download Latest Invoice</a>;

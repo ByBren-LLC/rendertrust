@@ -1,0 +1,307 @@
+version: '3.9'
+services:
+  scheduler:
+    image: wtfb/scheduler:latest
+    environment:
+      - FLEET_GATEWAY=http://scheduler:8080
+    ports:
+      - '8080:8080'
+  edge1:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge1
+      - SCHED=http://scheduler:8080
+
+  edge2:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge2
+      - SCHED=http://scheduler:8080
+
+  edge3:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge3
+      - SCHED=http://scheduler:8080
+
+  edge4:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge4
+      - SCHED=http://scheduler:8080
+
+  edge5:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge5
+      - SCHED=http://scheduler:8080
+
+  edge6:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge6
+      - SCHED=http://scheduler:8080
+
+  edge7:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge7
+      - SCHED=http://scheduler:8080
+
+  edge8:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge8
+      - SCHED=http://scheduler:8080
+
+  edge9:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge9
+      - SCHED=http://scheduler:8080
+
+  edge10:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge10
+      - SCHED=http://scheduler:8080
+
+  edge11:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge11
+      - SCHED=http://scheduler:8080
+
+  edge12:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge12
+      - SCHED=http://scheduler:8080
+
+  edge13:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge13
+      - SCHED=http://scheduler:8080
+
+  edge14:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge14
+      - SCHED=http://scheduler:8080
+
+  edge15:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge15
+      - SCHED=http://scheduler:8080
+
+  edge16:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge16
+      - SCHED=http://scheduler:8080
+
+  edge17:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge17
+      - SCHED=http://scheduler:8080
+
+  edge18:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge18
+      - SCHED=http://scheduler:8080
+
+  edge19:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge19
+      - SCHED=http://scheduler:8080
+
+  edge20:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge20
+      - SCHED=http://scheduler:8080
+
+  edge21:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge21
+      - SCHED=http://scheduler:8080
+
+  edge22:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge22
+      - SCHED=http://scheduler:8080
+
+  edge23:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge23
+      - SCHED=http://scheduler:8080
+
+  edge24:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge24
+      - SCHED=http://scheduler:8080
+
+  edge25:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge25
+      - SCHED=http://scheduler:8080
+
+  edge26:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge26
+      - SCHED=http://scheduler:8080
+
+  edge27:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge27
+      - SCHED=http://scheduler:8080
+
+  edge28:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge28
+      - SCHED=http://scheduler:8080
+
+  edge29:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge29
+      - SCHED=http://scheduler:8080
+
+  edge30:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge30
+      - SCHED=http://scheduler:8080
+
+  edge31:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge31
+      - SCHED=http://scheduler:8080
+
+  edge32:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge32
+      - SCHED=http://scheduler:8080
+
+  edge33:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge33
+      - SCHED=http://scheduler:8080
+
+  edge34:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge34
+      - SCHED=http://scheduler:8080
+
+  edge35:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge35
+      - SCHED=http://scheduler:8080
+
+  edge36:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge36
+      - SCHED=http://scheduler:8080
+
+  edge37:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge37
+      - SCHED=http://scheduler:8080
+
+  edge38:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge38
+      - SCHED=http://scheduler:8080
+
+  edge39:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge39
+      - SCHED=http://scheduler:8080
+
+  edge40:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge40
+      - SCHED=http://scheduler:8080
+
+  edge41:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge41
+      - SCHED=http://scheduler:8080
+
+  edge42:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge42
+      - SCHED=http://scheduler:8080
+
+  edge43:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge43
+      - SCHED=http://scheduler:8080
+
+  edge44:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge44
+      - SCHED=http://scheduler:8080
+
+  edge45:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge45
+      - SCHED=http://scheduler:8080
+
+  edge46:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge46
+      - SCHED=http://scheduler:8080
+
+  edge47:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge47
+      - SCHED=http://scheduler:8080
+
+  edge48:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge48
+      - SCHED=http://scheduler:8080
+
+  edge49:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge49
+      - SCHED=http://scheduler:8080
+
+  edge50:
+    build: ./mock_edge
+    environment:
+      - EDGE_ID=edge50
+      - SCHED=http://scheduler:8080

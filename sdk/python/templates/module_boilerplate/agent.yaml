@@ -1,0 +1,8 @@
+name: EchoAgent
+version: 0.0.1
+entrypoint: python /app/agent.py
+policies:
+  - creative_safe_harbor_v1
+metadata:
+  author: "Template Dev"
+  pricing: "0.001 USD / call"

@@ -1,0 +1,14 @@
+services:
+  ollama-cpu:
+    image: ollama/ollama:latest
+    environment:
+      - OLLAMA_MODELS=/models
+    volumes:
+      - models:/models
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G
+volumes:
+  models:

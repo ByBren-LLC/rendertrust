@@ -1,0 +1,8 @@
+{
+  "name": "creative_safe_harbor_v1",
+  "rules": [
+    {"action":"BLOCK","condition":{"contentLabel":"POTENTIALLY_NSFW"}},
+    {"action":"BLOCK","condition":{"field":"export.raw_script","equals":true}},
+    {"action":"LOG","condition":{"toxicityScore":">0.2"}}
+  ]
+}

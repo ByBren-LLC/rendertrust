@@ -1,0 +1,9 @@
+0:00  Title + logo
+0:05  "Generate storyboards on a 2015 MacBook—here's how."
+0:15  Show installing Edge Kit CLI.
+0:30  WTFB‑Local UI, click GPU‑Assist.
+0:45  Fleet dashboard pops a new job card.
+1:15  Creator sees frames arrive locally.
+1:30  Open AgentSpace—drag Script‑Score into pipeline.
+2:15  Billing page—buy credits with Stripe.
+2:40  Close: "Your IP, your GPUs, your story. Join WTFB."

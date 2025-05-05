@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  poller:
+    build: ./services/node-poller
+    environment:
+      - FLEET_GATEWAY_URL=${FLEET_GATEWAY_URL}
+      - EDGE_RELAY_TOKEN=${EDGE_RELAY_TOKEN}
+    network_mode: host
