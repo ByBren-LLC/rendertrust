@@ -62,10 +62,10 @@ To set up your development environment:
 
 ```bash
 # Clone the repository
-git clone https://github.com/cheddarfox/rendertrust.git
+# NOT ACTIVE git clone https://github.com/cheddarfox/rendertrust.git 
 
 # Run the bootstrap script
-curl -sL https://raw.githubusercontent.com/cheddarfox/rendertrust/dev/tools/bootstrap.sh | bash
+# NOT ACTIVE curl -sL https://raw.githubusercontent.com/cheddarfox/rendertrust/dev/tools/bootstrap.sh | bash
 ```
 
 ## Architecture Diagrams
