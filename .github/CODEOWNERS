@@ -1,0 +1,21 @@
+# RenderTrust CODEOWNERS File
+#
+# This file designates code ownership for the RenderTrust repository.
+# 
+# Historical Note: This repository was originally mis-integrated with the WTFB-app repository
+# and was migrated on May 17, 2025. See docs/adr/001-repository-alignment.md for details.
+
+# Default owners for everything in the repo
+*       @cheddarfox
+
+# Infrastructure components
+/infrastructure/    @cheddarfox/auggie
+
+# Core engine
+/src/engine/        @cheddarfox/auggie @cheddarfox/claude-code
+
+# Frontend components
+/src/ui/            @cheddarfox/claude-code
+
+# Documentation
+/docs/              @cheddarfox/auggie @cheddarfox/claude-code
